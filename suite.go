@@ -9,7 +9,7 @@ import (
 // TestOk successful
 func TestOk() gurl.Arrow {
 	return gurl.HTTP(
-		ø.GET("https://example.com"),
+		ø.GET("https://assay.it"),
 		ƒ.Code(200),
 	)
 }
