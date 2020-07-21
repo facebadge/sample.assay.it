@@ -1,4 +1,4 @@
-# assay.it simple example
+# Simple Suite Sample
 
 Here is an example application to show https://assay.it in actions.
 
