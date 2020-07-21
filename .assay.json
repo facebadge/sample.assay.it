@@ -1,6 +1,4 @@
 {
-  "config": [
-  ],
   "suites": [
     "suite.go"
   ]
