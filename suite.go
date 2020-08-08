@@ -1,7 +1,7 @@
 /*
 
-Here is an example suite that illustrates an ability to apply unit-test like strategy
-on quality assessment. The suite implements a test cases as function of the form:
+Here is an example suite that illustrates an ability to apply contract testing of
+quality assessment strategy. The contact implements a test cases as function of the form:
 
   func TestAbc() gurl.Arrow
 
@@ -17,7 +17,7 @@ The service evaluates suites and its test cases sequentially one after another.
 
 */
 
-// each suite is always declared as main package.
+// Package sample is a standard Golang declaration. It groups set of logically related contracts.
 package sample
 
 /*
@@ -47,27 +47,26 @@ TestOk makes HTTP request and checks the quality of the response.
 This is simple extample just validates that service is alive and
 responding with HTML document.
 
-Let's look in depth on the anatomy of test case
+Let's look in depth on the anatomy of the contract
 */
 func TestOk() gurl.Arrow {
 	/*
 		The case is developed with Go URL library (gurl). This library defines
 		a rich techniques to hide the networking complexity using higher-order-functions
-		and its compositions. See either doc.assay.it for details about api or
-		gurl documentation at github.com
+		and its compositions. See https://assay.it/doc/core for details about api
 
 		gurl.HTTP lifts primitive protocol functions to higher-order suite.
 	*/
 	return gurl.HTTP(
 		// module ø (gurl/http/send) defines function to declare HTTP request.
-		// See the doc.assay.it for details about module ø or gurl documentation at github.com.
+		// See the https://assay.it/doc/core for details about module ø.
 
 		// declares HTTP method and destination URL
 		ø.GET("https://assay.it"),
 
 		// module ƒ (gurl/http/recv) defines function to validate correctness of HTTP protocol.
 		// Each ƒ constrain might terminate execution of consequent ƒ's if it expectation fails.
-		// See the doc.assay.it for details about module ƒ or gurl documentation at github.com.
+		// See the https://assay.it/doc/core for details about module ƒ.
 
 		// requires HTTP Status Code to be 200 OK
 		ƒ.Code(gurl.StatusCodeOK),
