@@ -18,7 +18,7 @@ The service evaluates suites and its test cases sequentially one after another.
 */
 
 // each suite is always declared as main package.
-package main
+package sample
 
 /*
 
@@ -76,6 +76,3 @@ func TestOk() gurl.Arrow {
 		ƒ.Header("Content-Type").Is("text/html"),
 	)
 }
-
-// empty main function is a required for each suite, otherwise we cannot compile it.
-func main() {}
