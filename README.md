@@ -1,6 +1,6 @@
-# Minimal Quality Assessment Job
+# Minimal Quality Assessment Suite
 
-Learn about quality assessments of Serverless applications with https://assay.it. This example implements a minimal quality assessment job using Behaviour as a Code.
+Learn about quality assessments of Serverless applications with https://assay.it. This example implements a minimal quality assessment suite using Behaviour as a Code.
 
 
 ## Inspiration
