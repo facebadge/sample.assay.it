@@ -1,6 +1,6 @@
-# Minimal Quality Assessment Suite
+# Minimal Example - Behavior as a Code suite
 
-Learn about quality assessments of Serverless applications with https://assay.it. This example implements a minimal quality assessment suite using Behaviour as a Code.
+Learn about quality assessments of Serverless applications with https://assay.it. This example implements a minimal quality assessment suite using Behavior as a Code.
 
 
 ## Inspiration
