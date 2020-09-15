@@ -17,12 +17,12 @@ Quality assurance of serverless applications is more complex than doing it for o
 
 2. **Fork [assay-it/sample.assay.it](https://github.com/assay-it/sample.assay.it)** to your own GitHub account and then add to the service workspace. The example implements a minimal quality assessment job using [category pattern](https://assay.it/doc/core/category) to connect cause-and-effect (Given/When/Then) with the networking concepts (Input/Process/Output). Just write [pure functional code](https://assay.it/doc/core) instead of clicking through UI or maintaining endless XML, YAML or JSON documents.
 ```go
-func TestOk() gurl.Arrow {
-	return gurl.HTTP(
-		ø.GET("https://assay.it"),
-		ƒ.Code(gurl.StatusCodeOK),
-		ƒ.Header("Content-Type").Is("text/html"),
-	)
+func TestOk() assay.Arrow {
+  return http.Join(
+    ø.GET("https://assay.it"),
+    ƒ.Code(http.StatusCodeOK),
+    ƒ.Header("Content-Type").Is("text/html"),
+  )
 }
 ```
 
