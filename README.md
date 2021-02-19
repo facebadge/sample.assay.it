@@ -20,7 +20,7 @@ Quality assurance of serverless applications is more complex than doing it for o
 func TestOk() assay.Arrow {
   return http.Join(
     ø.GET("https://assay.it"),
-    ƒ.Code(http.StatusCodeOK),
+    ƒ.Code(http.StatusOK),
     ƒ.Header("Content-Type").Is("text/html"),
   )
 }
