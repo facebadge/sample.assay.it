@@ -74,7 +74,7 @@ func TestOk() assay.Arrow {
 		// about module ƒ.
 
 		// requires HTTP Status Code to be 200 OK
-		ƒ.Code(http.StatusCodeOK),
+		ƒ.Code(http.StatusOK),
 
 		// requires response content-type to be text/html
 		ƒ.Header("Content-Type").Is("text/html"),
